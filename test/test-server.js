@@ -54,14 +54,6 @@ describe('Shopping List', function() {
                 res.body.should.have.property('_id');
                 res.body.name.should.be.a('string');
                 res.body.name.should.equal('Kale');
-                storage.items.should.be.a('array');
-                storage.items.should.have.length(4);
-                storage.items[3].should.be.a('object');
-                storage.items[3].should.have.property('_id');
-                storage.items[3].should.have.property('name');
-                storage.items[3].id.should.be.a('number');
-                storage.items[3].name.should.be.a('string');
-                storage.items[3].name.should.equal('Kale');
                 done();
             })
     });
